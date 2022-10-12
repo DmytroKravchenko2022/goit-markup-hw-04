@@ -1,0 +1,349 @@
+:root {
+    --color-primary: #2F303A;
+    --color-secondary: #F5F5F5;
+    --color-brand: #2196F3;
+    --txtcolor-primary: #212121;
+    --txtcolor-secondary: #757575;
+}
+
+/*body*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+/*header*/
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.web-logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--color-brand);
+}
+
+.studiologo-header {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-right: 93px;
+}
+
+.link-nav {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--txtcolor-primary);
+}
+
+.link-nav:hover,
+.link-nav:focus,
+.link-nav--current {
+    color: var(--color-brand);
+}
+
+.link-contact {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--txtcolor-secondary)
+}
+
+.link-contact:hover,
+.link-contact:focus {
+    color: var(--color-brand)
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    padding-left: 0px;
+    gap: 50px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.contact {
+    display: flex;
+    gap: 50px;
+    padding-left: 0px;
+}
+
+/*main*/
+/*title section*/
+.hero {
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 200px 0;
+}
+
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-requestservice {
+    background-color: var(--color-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px 32px 10px 32px;
+    margin-top: 30px;
+}
+
+.btn-requestservice:hover,
+.btn-requestservice:focus {
+    background-color: #188CE8;
+}
+
+/*section under title*/
+.benefits {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--txtcolor-primary);
+}
+
+.benefits-description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--txtcolor-secondary);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.whatwe-do {
+    padding-top: 0;
+}
+
+.title-whatwe-do {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txtcolor-primary);
+}
+
+.picsof-whatwe-do {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.listof-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.listof-benefits .list {
+    width: 270px;
+}
+
+/*our team section*/
+.team {
+    background-color: #F5F4FA;
+}
+
+.people-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.people {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txtcolor-primary);
+    margin-bottom: 50px;
+}
+
+.team-wrapper {
+    padding: 30px 0;
+}
+
+.people-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txtcolor-primary);
+    margin-bottom: 10px;
+}
+
+.professions {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txtcolor-secondary);
+}
+
+/*footer*/
+.footer {
+    background-color: var(--color-primary);
+    padding: 60px 0;
+}
+
+.studiologo-footer {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-adress {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.adress-line {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+}
+
+.link-contact-footer {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+    color: var(--txtcolor-secondary);
+}
+
+/*studio page - done*/
+/*section buttons*/
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.filter-button {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: #212121;
+    cursor: pointer;
+    padding: 6px 22px 6px 22px;
+    border: none;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--color-brand);
+    color: #FFFFFF;
+}
+
+/*pictures section*/
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.boxes {
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+.project-wrapper {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
+}
+
+.project-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--txtcolor-primary);
+
+}
+
+.project-type {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.03em;
+    color: var(--txtcolor-secondary);
+    margin-top: 4px;
+}
