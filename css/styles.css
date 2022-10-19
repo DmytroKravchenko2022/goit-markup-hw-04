@@ -78,6 +78,8 @@ img {
 }
 /*contact*/
 .link-contact {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -117,17 +119,14 @@ img {
     gap: 10px;
 }
 
-.contact-figure {
-    margin: 0px 0px;
-    fill: var(--txtcolor-secondary);
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
-.link-contact:hover {
+.link-contact:hover,
+.link-contact:focus {
     color: var(--color-brand);
-}
-
-.contact-icon:hover {
-    fill: var(--color-brand);
 }
 
 /*main*/
@@ -206,14 +205,17 @@ img {
 }
 
 .design-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
-    margin: 0px 0px;
     background-color: #F5F4FA;
     border-radius: 4px;
 }
 
-.benefits-image {
-    padding: 25px 102.34px;
+.benefits-icon {
+    width: 70px;
+    height: 70px;
 }
 
 /*what we do*/
@@ -297,10 +299,15 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: #AFB1B8;
+    color: #AFB1B8;
 }
 
-.social-link:hover {
+.social-icon {
+    fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
     background-color: var(--color-brand);
 }
 
@@ -322,27 +329,26 @@ img {
     margin-top: 50px;
 }
 
-.client-box {
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 
-.clients-link {
-    display: flex;
-    fill: #AFB1B8;
-}
-
 .clients-logo {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
 }
 
-.clients-link:hover {
-    fill: var(--color-brand);
-}
-
-.client-box:hover {
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--color-brand);
     border: 1px solid var(--color-brand);
 }
 
@@ -371,6 +377,10 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 9px;
+}
+
+.contact-footer-list:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -421,12 +431,11 @@ img {
 
 .logo-address-social {
     display: flex;
-    width: 507px;
-    justify-content: space-between;
+    align-items: baseline;
 }
 
 .social {
-    margin-top: 12px;
+    margin-left: 70px;
 }
 
 /*studio page - done*/
@@ -455,6 +464,7 @@ img {
 .filter-button:focus {
     background-color: var(--color-brand);
     color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*pictures section*/
@@ -463,11 +473,6 @@ img {
     flex-wrap: wrap;
     margin-top: 50px;
     gap: 30px;
-}
-
-.boxes {
-    box-sizing: border-box;
-    background: #FFFFFF;
 }
 
 .project-wrapper {
@@ -490,4 +495,8 @@ img {
     letter-spacing: 0.03em;
     color: var(--txtcolor-secondary);
     margin-top: 4px;
+}
+
+.boxes:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
