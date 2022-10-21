@@ -132,7 +132,9 @@ img {
 /*main*/
 /*title section*/
 .hero {
-    /*background-color: var(--color-primary);*/
+    max-width: 1600px;
+    justify-content: center;
+    background-color: var(--color-primary);
     text-align: center;
     padding: 200px 0;
     background-image: linear-gradient(
