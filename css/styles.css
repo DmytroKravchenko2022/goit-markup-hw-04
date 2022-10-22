@@ -134,6 +134,7 @@ img {
 .hero {
     max-width: 1600px;
     justify-content: center;
+    align-items: center;
     background-color: var(--color-primary);
     text-align: center;
     padding: 200px 0;
