@@ -41,7 +41,9 @@ img {
 /*header*/
 .header {
     border-bottom: 1px solid #ECECEC;
+    background-color: #FFFFFF;
 }
+
 /*logo*/
 .web-logo {
     text-decoration: none;
@@ -134,10 +136,10 @@ img {
 .hero {
     max-width: 1600px;
     justify-content: center;
-    align-items: center;
     background-color: var(--color-primary);
     text-align: center;
     padding: 200px 0;
+    margin: 0 auto;
     background-image: linear-gradient(
         var(--gradient)),
         url(../images/titleOverlay.jpeg);
